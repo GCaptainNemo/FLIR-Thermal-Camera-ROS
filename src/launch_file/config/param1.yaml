@@ -1,0 +1,5 @@
+color:
+    IS_TO_PSEUDO_COLOR: true
+    palette: False_color_palette4
+temp:
+    IS_TO_TEMP: false
