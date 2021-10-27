@@ -1,6 +1,6 @@
 # FLIR-thermal-image-ROS
 ## 一、介绍
-本仓库ROS包对FLIR A615相机(USB连接)进行订阅(topic: /usb_cam/image_raw)，进行伪彩色增强后发布(topic: /thermal/pseudo_color)，src下是两个工具包ir_convert和launch_file
+本仓库ROS包对FLIR A615相机(USB连接)进行订阅(topic: /usb_cam/image_raw)，进行伪彩色增强后发布(topic: /thermal/pseudo_color)，工作空间目录如下所示。
 ```
 ws_FLIR
 │   README.md
@@ -10,8 +10,8 @@ ws_FLIR
      └───package: ir_convert
      │                         node: ir_convert_node (subscribe FLIR camera raw image and convert)
      │                        
-     └───package: launch_file
-                               launch file: ir_convert.launch(launch ir_convert)
+     └───package: launch_flir
+                               launch file: ir_convert.launch(launch ir_convert_node)
                                
 
 ```
@@ -47,7 +47,7 @@ roslaunch usb_cam usb_flir.launch
 链接: https://pan.baidu.com/s/1MUsm2CswUyRHH7sWTro-pg 提取码: h77t 
 
 5. 运行ir_convert_node数据转换节点，并在rviz中显示
-```roslaunch launch_file ir_convert.launch``` 
+```roslaunch launch_flir  ir_convert.launch``` 
 
 ## 三、效果
 

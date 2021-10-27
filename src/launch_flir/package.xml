@@ -1,8 +1,8 @@
 <?xml version="1.0"?>
 <package format="2">
-  <name>launch_file</name>
+  <name>launch_flir</name>
   <version>0.0.0</version>
-  <description>The launch_file package</description>
+  <description>The launch_flir package</description>
 
   <!-- One maintainer tag required, multiple allowed, one person per tag -->
   <!-- Example:  -->
