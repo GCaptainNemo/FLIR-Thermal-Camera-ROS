@@ -1,6 +1,6 @@
 # FLIR-thermal-image-ROS
 ## 一、介绍
-本仓库ROS包对FLIR A615相机(USB连接)进行订阅(topic: /usb_cam/image_raw)，进行伪彩色增强后发布(topic: /thermal/pseudo_color)，工作空间目录如下所示。
+本仓库ROS包对FLIR A615相机(USB3 vision)进行订阅(topic: /usb_cam/image_raw)，进行伪彩色增强后发布(topic: /thermal/pseudo_color)，工作空间目录如下所示。
 ```
 ws_FLIR
 │   README.md
