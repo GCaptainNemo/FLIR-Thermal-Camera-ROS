@@ -8,12 +8,9 @@ ws_FLIR
 └───src
      │
      └───package: ir_convert
-     │                         node: ir_convert_node (subscribe FLIR camera raw image and convert)
-     │                        
-     └───package: launch_flir
-                               launch file: ir_convert.launch(launch ir_convert_node)
-                               
-
+                              node: ir_convert_node (subscribe FLIR camera raw image and convert)
+                                │                        
+                                └─   launch file: ir_convert.launch(launch ir_convert_node)
 ```
 
 调试环境与依赖：
@@ -47,7 +44,7 @@ roslaunch usb_cam usb_flir.launch
 链接: https://pan.baidu.com/s/1MUsm2CswUyRHH7sWTro-pg 提取码: h77t 
 
 5. 运行ir_convert_node数据转换节点，并在rviz中显示
-```roslaunch launch_flir  ir_convert.launch``` 
+```roslaunch ir_convert  ir_convert.launch``` 
 
 ## 三、效果
 

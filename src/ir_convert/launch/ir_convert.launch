@@ -1,0 +1,7 @@
+<launch>
+	<node pkg="ir_convert" type="ir_convert_node" name="ir_convert_node" output="screen">
+		<rosparam file="$(find ir_convert)/config/param.yaml" command="load"/>	
+	</node>
+	<node pkg="rviz" type="rviz" name="rviz_thermal" args="-d $(find ir_convert)/config/flir.rviz" required="true" />
+	
+</launch>
