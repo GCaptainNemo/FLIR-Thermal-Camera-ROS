@@ -161,6 +161,11 @@ add_executable(${PROJECT_NAME}_node src/ir_convert.cpp src/utils.cpp)
 target_link_libraries(${PROJECT_NAME}_node ${catkin_LIBRARIES} 
                                            ${OpenCV_LIBRARIES} )
 
+add_executable(snapshot src/snapshot.cpp)
+target_link_libraries(snapshot ${catkin_LIBRARIES} 
+                           	${OpenCV_LIBRARIES} )
+
+
 #############
 ## Install ##
 #############
