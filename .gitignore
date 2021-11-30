@@ -2,3 +2,4 @@ build
 devel
 .catkin_workspace
 src/ir_convert/src/.vscode/
+data/

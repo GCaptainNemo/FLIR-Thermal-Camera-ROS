@@ -58,5 +58,8 @@ roslaunch usb_cam usb_flir.launch
 
 [1] [usb-cam安装](https://www.jianshu.com/p/ec0ebf7fef22)
 
+[2] [raw2temp](https://www.rdocumentation.org/packages/Thermimage/versions/4.0.1/topics/raw2temp)
+
+[3] [获得FLIR exif元信息](https://github.com/Nervengift/read_thermal.py)
 
 

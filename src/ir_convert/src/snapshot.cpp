@@ -23,7 +23,7 @@ void imageCallback(const sensor_msgs::ImageConstPtr& msg) {
   try
   {
     cv_ptr = cv_bridge::toCvCopy(msg, sensor_msgs::image_encodings::BGR8);
-
+    
     out_img = cv_ptr->image.clone();
     cv::Size img_size = out_img.size();
     ROS_INFO("cv_ptr->image.size = %d, %d", img_size.height, img_size.width);
