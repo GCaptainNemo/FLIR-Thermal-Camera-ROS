@@ -54,6 +54,11 @@ roslaunch usb_cam usb_flir.launch
 <p align="center"><img src="./result/pseudo_color_image.png"  width=50%></p>
 <h6 align="center"> 为彩色增强图像</h6>
 
+ir_convert_/src/img2temp.py脚本<sup>[2,3]</sup>可以获得原始16位红外图片和对应温度(需要有对应exif信息)
+
+<p align="center"><img src="./result/raw_and_temp.png"  width=50%></p>
+<h6 align="center"> 原始图片和温度图片</h6>
+
 ## 四、参考资料
 
 [1] [usb-cam安装](https://www.jianshu.com/p/ec0ebf7fef22)
@@ -61,5 +66,4 @@ roslaunch usb_cam usb_flir.launch
 [2] [raw2temp](https://www.rdocumentation.org/packages/Thermimage/versions/4.0.1/topics/raw2temp)
 
 [3] [获得FLIR exif元信息](https://github.com/Nervengift/read_thermal.py)
-
 
